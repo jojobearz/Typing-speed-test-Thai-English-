@@ -1,0 +1,384 @@
+/*margin and padding on body element
+  can introduce errors in determining
+  element position and are not recommended;
+  we turn them off as a foundation for YUI
+  CSS treatments. */
+
+body {
+	margin:0;
+	padding:0;
+	background-color: #fff;
+	color: #000000;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:14px;
+	text-align:left-align;
+	height:100%;
+}
+
+.buttonRed {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+	background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+	background-color:#fe1a00;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.buttonRed:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+	background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+	background-color:#ce0100;
+}
+.buttonRed:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+#logoContainer {
+  text-align:center;
+  padding-bottom:20px;
+  padding-top:0px;
+  margin:0px; 
+}
+
+#container {
+  z-index: 100000;
+  margin: 0 auto;
+  padding: 20px 8px 8px 8px;
+  width: 950px;
+  text-align:left;
+}
+
+div#header {
+  position:absolute;
+  background-color: #7F9DB9;
+  border-bottom: black 1px dashed;
+  color: #ffffff;
+  font-family: Verdana, arial, helvetica, sans-serif;
+  font-size: 12px;
+  top: 0;
+  left: 0;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom:20px;
+  padding: 0px;
+
+  height: 145px;
+  width: 100%;
+  z-index:-1;
+}
+
+.noPaddingOrMargin {
+  padding:0px;
+  margin:0px; 
+}
+
+div#appHeading {
+	color: #ffffff;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:22px;
+	font-weight:bold;
+	padding: 0px 8px 8px 8px;
+	margin: 0px auto;
+}
+
+
+
+div#subAppHeading {
+	color: #ffffff;
+	background-color: transparent;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding: 2px;
+	margin: 0px auto;
+	width: 350px;
+}
+
+div#instructionBox {
+  border-width: 1px;  
+  border-style: dashed; 
+  border-color: black;
+  background-color: #FFFFA0; 
+  width: 950px;
+  margin: 0 auto ;
+}
+
+#inputRow {
+  margin: 0 auto;
+  padding: 4px; 
+}
+
+div#projectContainer {
+  text-align:left-align; 
+  display:block;
+  background-color:#fff;
+  zoom: 1;
+}
+
+#inputContainer {
+  margin:0px;
+  padding:0px;
+  text-align:left-align; 
+  display:block;
+  background-color:#fff;
+  zoom: 1;
+}
+
+#outputContainer {
+  text-align:left-align; 
+  display:none;
+  background-color:transparent;
+  padding-top:6px;
+  
+  zoom: 1;
+}
+
+.yui-skin-sam .yui-navset { /* no hover effect for selected */ 
+    background: #7F9DB9 ; /* selected tab background */ 
+} 
+<!-- 7F9DB9 -->
+
+#inputTab {
+  margin: 0px;
+  padding: 0px; 
+}
+
+.inputTabContainer {
+
+}
+
+#guideKeyboardHeader {
+  margin: 0 auto;
+  width: 280px;
+  height: 38px;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#timeLeft {
+  width: 90px; 
+  color: #000;
+}
+
+#realTimeWordsCorrect {
+  font-weight: bold; 
+  color: #00f;
+}
+
+#realTimeWordsIncorrect {
+  font-weight: bold; 
+  color: #f00;
+}
+
+.leftColumn  {
+  float: left;
+  width: 160px;
+  height: 26px;
+  line-height:26px;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:18px;
+	text-align:left;
+	
+  background-color: transparent;
+}
+
+.rightColumn {
+  float: right;
+  width: 100px;
+  height:26px;
+  line-height:26px;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:18px;
+	text-align:right;
+  
+  background-color: transparent;
+}
+
+#configContainer {
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.configTable {
+  margin: 0 auto;
+  width: 650px;
+  background-color: transparent;
+}
+
+#configHeader {
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:18px;
+	text-align:center;
+  font-weight:bold;
+}
+
+.configLeftColumn  {
+
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:14px;
+	text-align:left;
+	
+  background-color: transparent;
+}
+
+.configRightColumn {
+
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:18px;
+	text-align:right;
+  
+  background-color: transparent;
+}
+
+h1 {
+	color: #000000;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:22px;
+	font-weight:bold;
+	padding: 0px;
+	margin: 0px;
+}
+
+h2 {
+	color: #000000;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	padding: 4px;
+	margin: 0px;
+}
+
+h3 {
+	color: #000000;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding: 4px;
+	margin: 0px;
+}
+
+.currentWord {
+  color: #00f;
+	font-family: Verdana, arial, helvetica, sans-serif;
+  font-size:16px;
+}
+
+.settingsStyle {
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:12px;
+}
+
+#wordDisplay {
+  background-color: #ffffff;
+  padding: 6px;
+  margin: 0 auto;
+
+  border-width: 1px;  
+  border-style: solid; 
+  border-color: #7F9DB9;  
+  
+  width: 900px;
+  height: 78px;
+  
+  text-align: center;
+  overflow: hidden;
+}
+
+#typingAssignmentContainer {
+  position:relative;
+  margin:0px auto;
+  padding:0px;
+  text-align: center;
+  background-color:transparent;
+  width: 886;
+  height: 66px;
+  overflow: hidden;
+}
+
+#typingAssignment {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  
+  background-color: transparent;
+  color: #000000;
+  
+  padding: 0px;
+  margin: 0px auto;
+
+  text-align: left;
+
+	font-family: Verdana, arial, helvetica, sans-serif;
+  font-size:16px;
+
+  line-height:22px;
+  overflow: hidden; 
+}
+
+#typingInput {
+  width: 300px;
+  line-height:22px;
+	font-family: Verdana, arial, helvetica, sans-serif;
+  font-size:16px;
+}
+#typingTestArea {
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.controlsStyle {
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:14px;
+}
+
+.controlsStyleBig {
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size:18px;
+}
+
+.theSmallPrint {
+  font-size:10px;
+}
+
+#finishedTypingScore {
+  font-size:18px;
+}
+
+#finishedTypingStats {
+  
+}
+
+#tab1 {
+  height:650px;
+}
+
+#tab2 {
+  height:650px;
+}
